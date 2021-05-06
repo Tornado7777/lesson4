@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*1.	Написать метод GetFullName(string firstName, string lastName, string patronymic), 
+ * принимающий на вход ФИО в разных аргументах и возвращающий объединённую строку с ФИО. 
+ * Используя метод, написать программу, выводящую в консоль 3–4 разных ФИО.
+ */
+using System;
 
 namespace lesson4._1
 {
@@ -8,10 +12,10 @@ namespace lesson4._1
         {
             string[] PLF = new string[4];
             int i = 0;
-            for ( i = 0; i < 4; i++)
+            for (i = 0; i < 4; i++)
             {
                 Console.WriteLine("Для окончания ввода ФИО наберите exit.");
-                Console.WriteLine($"Вы еще можете ввести {4-i} ФИО");
+                Console.WriteLine($"Вы еще можете ввести {4 - i} ФИО");
                 Console.WriteLine("Введите Фамилию:");
                 string firstName = Console.ReadLine();
                 if (firstName == "exit") break;
@@ -34,5 +38,6 @@ namespace lesson4._1
         {
             return firstName + " " + lastName + " " + patronymic;
         }
+    
     }
 }
